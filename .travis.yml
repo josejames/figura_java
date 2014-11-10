@@ -1,0 +1,12 @@
+language: java
+
+
+# command to run tests
+before_script:
+   - mkdir bin
+   - export CLASSPATH=junitUtils/junit-4.12.jar:junitUtils/hamcrest-core-1.3.jar:src/:bin/
+
+script: 
+
+   - javac -d bin src/test/FiguraTest.java 
+   - java org.junit.runner.JUnitCore test.FiguraTest
