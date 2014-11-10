@@ -18,5 +18,11 @@ public class FiguraTest {
 		Figura f = new Figura("cuadrado",3);
 		assertEquals("comparando en Test", 9, f.getArea(),0);
 	}
+	
+	@Test
+	public void test_cuadrado_2() {
+		Figura f = new Figura("cuadrado", 2);
+		assertEquals("comparando", 4, f.getArea(), 0);
+	}
 
 }
